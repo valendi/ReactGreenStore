@@ -1,11 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import './App.css'
+
+import Home from './pages/Home';
+import Products from './pages/Products';
+import Cart from './pages/Cart';
+
 
 function App() {
   return (
-    <div>
-      <h1>Hola desde React</h1>
-      <p>¡Mi primera página web con React!</p>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Products" element={<Products />} />
+        <Route path="/Cart" element={<Cart />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,0 +1,44 @@
+.cat-container{
+    margin-top: 5em;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10em;
+    margin: 2em;
+}
+
+.products img{
+    border-radius: 10px;
+}
+
+.products h3{
+    background-color: rgb(234, 248, 145);
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 0.3em;
+    margin: 1em;
+}
+
+.products p{
+    background-color: rgb(31, 30, 30);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    padding: 0.3em;
+    margin: 1em 4em 1em 4em;
+}
+
+button#cartBTN{
+    color: rgb(253, 253, 253);
+    background-color: rgb(29, 75, 26);
+    border: 1px rgb(29, 75, 26) solid;
+}
+
+button#cartBTN:hover{
+    color: rgb(29, 75, 26);
+    background-color: rgb(253, 253, 253);
+    border: 1px black solid;
+}
