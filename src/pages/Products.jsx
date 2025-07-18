@@ -6,7 +6,7 @@ const productsList = [
     name: "Cretona",
     price: 350,
     category: "decorative",
-    image: "/img/cret.jpg", // Coloca esta imagen en public/images
+    image: "/img/cret.jpg",
   },
   {
     id: 2,
