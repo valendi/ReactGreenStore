@@ -1,5 +1,4 @@
 import '../styles/products.css'
-import Header from '../components/Header';
 
 const productsList = [
   {
@@ -47,12 +46,11 @@ const productsList = [
 
 ];
 
-function Products() {
+function Products({ onAddToCart }) {
 
   const categories=["decorative", "aromatic", "floral"];
   return (    
     <div>
-      <Header/>
       {categories.map((cat) => (
         <div className='cat-container' key={cat}>
           <h2>{cat.toUpperCase()}</h2>
@@ -66,7 +64,9 @@ function Products() {
                     <h3>{item.name}</h3>
                     <p>${item.price}</p>
                   </div>
-                  <button id='cartBTN'>Add to cart</button>
+
+                  <button id="cartBTN" onClick={() => onAddToCart(item)}>Add to cart</button>
+
                 </div>
               ))}
           </div>

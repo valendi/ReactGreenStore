@@ -1,0 +1,38 @@
+.cart-products{
+    margin: auto;
+}
+
+.cart-container h1{
+    margin-top: 2em;
+}
+
+.cart-products{
+    margin: auto;
+    text-align: center;
+}
+
+span.cart-count{
+    font-size: 0.8rem;
+    padding-left: 0.1em;
+}
+
+ul{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+}
+
+li.cart-product-item, .cart-total{
+    align-content: center;
+    margin: 2em;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5em;
+    border: 1px green solid;
+    border-radius: 10px;
+}
+
+.item-info h3{
+    font-weight: bold;
+    text-decoration: underline;
+}
