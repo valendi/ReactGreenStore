@@ -23,4 +23,3 @@ function CartBtn() {
 }
 
 export default CartBtn;
-
