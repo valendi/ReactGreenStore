@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css'
 
@@ -11,9 +11,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/Products" element={<Products />} />
-        <Route path="/Cart" element={<Cart />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </Router>
   );

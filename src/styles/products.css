@@ -1,3 +1,24 @@
+
+ul.navbar{
+    margin: auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+li{
+    margin: 0;
+}
+
+ul.navbar i{
+    font-size: 1.5rem;
+    color: green;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5em;
+    border: solid green 1px;
+}
+
 .cat-container{
     margin-top: 5em;
 }
@@ -9,8 +30,16 @@
     margin: 2em;
 }
 
+.product-info{
+    border-radius: 10px;
+    border:  solid 1px green;
+    margin: 0.5em;
+    background-color: white;
+}
+
 .products img{
     border-radius: 10px;
+    border: 2px solid black;
 }
 
 .products h3{
@@ -39,6 +68,6 @@ button#cartBTN{
 
 button#cartBTN:hover{
     color: rgb(29, 75, 26);
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(234, 248, 145);
     border: 1px black solid;
 }

@@ -1,10 +1,14 @@
 import '../styles/cart.css'
+import Header from '../components/Header';
 
 function Cart() {
   return (
     <div>
+      <Header/>
       <h1>Cart</h1>
-      <p>Aquí mostramos el carrito</p>
+      <div>
+        <p>Aquí mostramos el carrito</p>
+      </div>
     </div>
   );
 }

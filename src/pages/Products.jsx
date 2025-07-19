@@ -1,47 +1,48 @@
 import '../styles/products.css'
+import Header from '../components/Header';
 
 const productsList = [
   {
     id: 1,
-    name: "Cretona",
+    name: "Cretonne",
     price: 350,
     category: "decorative",
-    image: "/img/cret.jpg",
+    image: "./img/cret.jpg",
   },
   {
     id: 2,
-    name: "Suculenta",
+    name: "Succulent",
     price: 200,
     category: "decorative",
-    image: "/img/sucul.jpg",
+    image: "./img/sucul.jpg",
   },
   {
     id: 3,
-    name: "Menta",
+    name: "Mint",
     price: 150,
     category: "aromatic",
-    image: "/img/ment.jpg",
+    image: "./img/ment.jpg",
   },
   {
     id: 4,
-    name: "Romero",
+    name: "Rosemary",
     price: 200,
     category: "aromatic",
-    image: "/img/romero.jpg",
+    image: "./img/romero.jpg",
   },
   {
     id: 5,
-    name: "Clavel",
+    name: "Carnation",
     price: 600,
     category: "floral",
-    image: "/img/clav.jpg",
+    image: "./img/clav.jpg",
   },
   {
     id: 6,
-    name: "Orquidea",
+    name: "Orchid",
     price: 850,
     category: "floral",
-    image: "/img/orquid.jpg",
+    image: "./img/orquid.jpg",
   },
 
 ];
@@ -51,6 +52,7 @@ function Products() {
   const categories=["decorative", "aromatic", "floral"];
   return (    
     <div>
+      <Header/>
       {categories.map((cat) => (
         <div className='cat-container' key={cat}>
           <h2>{cat.toUpperCase()}</h2>
@@ -73,5 +75,6 @@ function Products() {
     </div>
   );
 }
+
 
 export default Products;
