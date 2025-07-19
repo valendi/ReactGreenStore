@@ -1,0 +1,25 @@
+header {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+ul.navbar{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 10em;}
+
+li{
+    margin: 0;
+}
+
+ul.navbar i{
+    font-size: 1.5rem;
+    color: green;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5em;
+    border: solid green 1px;
+}
